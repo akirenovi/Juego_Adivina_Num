@@ -1,40 +1,66 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!DOCTYPE html>/
+<html lang="es-mx">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
+    <title>Desencriptador1</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+<body class="body">
+    <header>
+        <nav><a href="index2.html">Reiniciar</a></nav>
+    
+    </header>
+   <main>
+         <section id="section1_1"   class="section1">
+            <div> <img id="Logo1" class="Logo" src="./assets/logo.png" alt="Logo"></div>
+            <div id="textoEncriptar_1" class="Texto_Encriptador">
+                
+                <textarea name="t1" id="Solicitador_1" class="container_input" placeholder="Ingrese su texto aquí"></textarea>
+            
+            </div>
 
-<body>
-
-    <div class="container">
-        <div class="container__contenido">
-            <div class="container__informaciones">
-                <div class="container__texto">
-                    <h1></h1>
-                    <p class="texto__parrafo"></p>
+            <div id="Texto_Informacion_1" class="Texto_Informacion">
+                <div id="Simbolo_1" class="Simbolo">
+                    !
                 </div>
-                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
-                <div class="chute container__botones">
-                    <button onclick="verificarIntento();" class="container__boton">Intentar</button>
-                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                <div id="MensajeSalida3_1" class="MensajeSalida3">
+                <h2 id="h2_1" > Solo letras mínusculas y sin acentos.</h2>
+                </div>
+
+                
+            </div>
+                            
+            <div id="frame3_1" class="frame3">
+                
+                <button id="btn-flex_1_1" onclick="Encriptadora();" class="btn-flex "> Encriptador </button>
+                <button id="btn-flex_1_2"  onclick="Desencriptadora();" class="btn-flex " > Desencriptador </button>
+            </div>   
+           
+            <div id="rectangulo1_1" class="rectangulo1" >
+                <img id="containerImageb_1" class="containerImageb" src="./assets/Imagen.png" alt="Imagen encriptador">
+                <div id="containerMayorTexto_1" class="containerMayorTexto">
+                    <div id="MensajeSalida1_1" class="MensajeSalida1">
+                        <h1 id="h1_1"> 'Ningún mensaje fue encontrado' </h1>
+                    </div>
+                    <div  id="MensajeSalida2_1"class="MensajeSalida2">
+                    <p id="p_1"> 'Ingresa el mensaje que deseas encriptar  o desencriptar'</p>
+                    </div>
+    
                 </div>
             </div>
-            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
-        </div>
-    </div>
+            
+            
+            
+            
+        </section>
 
 
-
-    <script src="app.js"></script>
-
-</body>
-
+   </main>
+   <script src="desencriptador.js"></script>
+   </body>
 </html>
